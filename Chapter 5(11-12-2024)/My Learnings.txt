@@ -1,0 +1,6 @@
+Learnings:
+	1. Nesting widgets
+	2. Creating a full widget tree
+	3. Creating a shallow widget tree
+		Refactoring code using constants, methods and Widget class
+	

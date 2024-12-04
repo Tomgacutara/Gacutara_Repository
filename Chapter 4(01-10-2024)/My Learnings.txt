@@ -1,0 +1,5 @@
+Learnings:
+	1. How to create a starter project
+	2. Basic Widgets like Scafold and AppBar Widgets
+	3. Also created two Dart files: main.dart for the main() function that starts the app and home.dart to
+	4. contain the code for the Home widget.

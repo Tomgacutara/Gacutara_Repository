@@ -1,0 +1,101 @@
+
+import 'package:flutter/material.dart';
+//import 'home.dart';
+//import 'cards.dart';
+void main() => runApp(MyApp());
+class MyApp extends StatelessWidget {
+
+
+   @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Refactor Example'),
+        ),
+        body: Column(
+          children: [
+            TaskCard(title: 'Task 1', description: 'Code'),
+            TaskCard(title: 'Task 2', description: 'Sleep'),
+            TaskCard(title: 'Task 3', description: 'Code Again'),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class TaskCard extends StatelessWidget {
+  final String title;
+  final String description;
+
+  TaskCard({required this.title, required this.description});
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      margin: EdgeInsets.all(8.0),
+      child: ListTile(
+        title: Text(title),
+        subtitle: Text(description),
+      ),
+    );
+  }
+
+ // This widget is the root of your application.
+//  @override
+//  Widget build(BuildContext context) {
+//  return MaterialApp(
+//  debugShowCheckedModeBanner: false,
+//  title: 'Starter Template',
+//  theme: ThemeData(
+//  primarySwatch: Colors.blue,
+//  ),
+//  home: Home(),
+//  );
+//  }
+
+
+}
+
+
+// import 'package:flutter/material.dart';
+
+// class Myapp extends StatelessWidget {
+  
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       home: Scaffold(
+//         appBar: AppBar(
+//           title: Text('Refactor Example'),
+//         ),
+//         body: Column(
+//           children: [
+//             TaskCard(title: 'Task 1', description: 'Description for task 1'),
+//             TaskCard(title: 'Task 2', description: 'Description for task 2'),
+//             TaskCard(title: 'Task 3', description: 'Description for task 3'),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+// class TaskCard extends StatelessWidget {
+//   final String title;
+//   final String description;
+
+//   TaskCard({required this.title, required this.description});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Card(
+//       margin: EdgeInsets.all(8.0),
+//       child: ListTile(
+//         title: Text(title),
+//         subtitle: Text(description),
+//       ),
+//     );
+//   }
+// }
